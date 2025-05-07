@@ -281,7 +281,13 @@
       transform: translateY(0);
     }
   }
-  .hero-content {
-    animation: fadeIn 1s ease-out;
+
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
   }
-  
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
